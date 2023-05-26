@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './layout/Publico/login/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrincipalComponent } from './layout/Privado/principal/principal.component';
+import { SegundoPisoComponent } from './layout/Privado/segundo-piso/segundo-piso.component';
+import { MesaItemsComponent } from './layout/Privado/mesa-items/mesa-items.component';
+import { EditMenuComponent } from './layout/Privado/edit-menu/edit-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    SegundoPisoComponent,
+    MesaItemsComponent,
+    EditMenuComponent
   ],
   imports: [
     BrowserModule,

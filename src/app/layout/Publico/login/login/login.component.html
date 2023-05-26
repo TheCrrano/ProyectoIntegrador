@@ -1,19 +1,38 @@
 <form [formGroup]="myForm" (ngSubmit)="submitFormulario()">
-    <div class="mb-3">
+  <div class="contenedor-login">
+    <div class="contenedor-imagenes">
+      <div class="card-img">
+        <img src="./assets/img/Logo-MamaLuz.jpg" alt="Mama Luz" width="200px" height="
+        200 px">
+
+      </div>
+      <div class="card-img">
+        <img src="./assets/img/usuario icono.png" alt="Icono del Usuario" width="200px" height="200px">
+      </div>
+
+    </div>
+
+
+
+    <div class="contenedor-registro">
+      <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Usuario</label>
         <input formControlName="usuario" [class.is-invalid]="f.usuario.errors && f.usuario.touched" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu usuario">
         <div id="validationServerUsernameFeedback" class="invalid-feedback">
           Usuario Obligatorio
         </div>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Contraseña</label>
-        <input formControlName="password" [class.is-invalid]="f.password.errors && f.password.touched" type="password" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu contraseña">
-        <div id="validationServerUsernameFeedback" class="invalid-feedback">
-          Contraseña Obligatoria
+        <div class="mb-3">
+         <label for="exampleFormControlTextarea1" class="form-label">Contraseña</label>
+          <input formControlName="password" [class.is-invalid]="f.password.errors && f.password.touched" type="password" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu contraseña">
+          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+            Contraseña Obligatoria
+          </div>
         </div>
-      </div>
-      <div class="mb-3">
-        <button class="btn btn-success">Ingresar</button>
-      </div>
+        <div class="mb-3">
+          <button class="btn btn-success">Ingresar</button>
+        </div>
+    </div>
+
+    </div>
 </form>
